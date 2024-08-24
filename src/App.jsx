@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-import Sidebar from './components/sidebar'
 import Dasbord from './components/Dasbord';
 
 function App() {
@@ -17,13 +16,10 @@ function App() {
 
   return (
     <>
+      {/* <Sidebar isDarkMode={isDarkMode} className="mt-5" /> */}
       <Dasbord isDarkMode={isDarkMode} toggleMode={toggleMode}/>
-      <Sidebar isDarkMode={isDarkMode} />
     </>
-
-    // <div className='app-container d-flex'  >
-    // </div>
-    
+  
   )
 }
 
