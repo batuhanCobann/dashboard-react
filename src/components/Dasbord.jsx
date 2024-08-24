@@ -111,7 +111,7 @@ export default function  Dasbord(){
 
             <div className="containers">
                 <div className="d-flex h-100">
-                    <div className="div1">
+                    <div className="div1 d-grid align-content-between">
                         <div>
                             <ul className="sidebar-ul d-grid gap-4 py-4 px-4">
                                 <li>{isDarkMode ? <img src="dark-logo-1.svg" alt="" /> : <img src="light-logo-1.svg" alt="" />}</li>
