@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-import Header from './components/Header'
-import FooterCard from './components/footerCard'
 import Sidebar from './components/sidebar'
+import Dasbord from './components/Dasbord';
 
 function App() {
 
@@ -17,11 +16,12 @@ function App() {
   };
 
   return (
-    <Header isDarkMode={isDarkMode} />
-      // <FooterCard isDarkMode={isDarkMode} /> 
+    <>
+      <Dasbord isDarkMode={isDarkMode} toggleMode={toggleMode}/>
+      <Sidebar isDarkMode={isDarkMode} />
+    </>
 
     // <div className='app-container d-flex'  >
-    //    {/* <Sidebar isDarkMode={isDarkMode} /> */}
     // </div>
     
   )
