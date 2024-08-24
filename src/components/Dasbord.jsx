@@ -113,7 +113,7 @@ export default function  Dasbord(){
                 <div className="d-flex h-100">
                     <div className="div1 d-grid align-content-between">
                         <div>
-                            <ul className="sidebar-ul d-grid gap-4 py-4 px-4">
+                            <ul className="sidebar-ul d-grid gap-4 py-4 px-4 ">
                                 <li>{isDarkMode ? <img src="dark-logo-1.svg" alt="" /> : <img src="light-logo-1.svg" alt="" />}</li>
                                 <li>{isDarkMode ? <img src="dark-logo-2.svg" alt="" /> : <img src="light-logo-2.svg" alt="" />}</li>
                                 <li>{isDarkMode ? <img src="dark-logo-3.svg" alt="" /> : <img src="light-logo-3.svg" alt="" />}</li>
@@ -132,17 +132,17 @@ export default function  Dasbord(){
                     <div className="div2 p-4 d-grid align-content-between">
                         <div>
                             <div className="sidebar-content-header">
-                                <h3 className="d-flex gap-2">{isDarkMode ? <img src="dark-back-logo.svg" alt="" /> : <img src="light-back-logo.svg" alt="" />}Lookscout Dashboard</h3> 
+                                <h3 className="d-flex gap-2 btn streched-link">{isDarkMode ? <img src="dark-back-logo.svg" alt="" /> : <img src="light-back-logo.svg" alt="" />}Lookscout Dashboard</h3> 
                                 <input className="sidebar-input mt-3" type="text" />
                             </div>
                             <div className="sidebar-content-body d-grid gap-3 mt-5">
-                                <p className="d-flex gap-2">{isDarkMode ? <img src="dark-sidebar-logo-1.svg" alt="" /> : <img src="light-sidebar-logo-1.svg" alt="" />}General</p>
-                                <p className="d-flex gap-2">{isDarkMode ? <img src="dark-sidebar-logo-2.svg" alt="" /> : <img src="light-sidebar-logo-2.svg" alt="" />}Messages</p>
-                                <p className="d-flex gap-2">{isDarkMode ? <img src="dark-sidebar-logo-3.svg" alt="" /> : <img src="light-sidebar-logo-3.svg" alt="" />}Notifications</p>
-                                <p className="d-flex gap-2">{isDarkMode ? <img src="dark-sidebar-logo-4.svg" alt="" /> : <img src="light-sidebar-logo-4.svg" alt="" />}Users</p>
-                                <p className="d-flex gap-2">{isDarkMode ? <img src="dark-sidebar-logo-5.svg" alt="" /> : <img src="light-sidebar-logo-5.svg" alt="" />}Events & Logs</p>
-                                <p className="d-flex gap-2">{isDarkMode ? <img src="dark-sidebar-logo-6.svg" alt="" /> : <img src="light-sidebar-logo-6.svg" alt="" />}Organization</p>
-                                <p className="d-flex gap-2">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
+                                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-1.svg" alt="" /> : <img src="light-sidebar-logo-1.svg" alt="" />}General</p>
+                                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-2.svg" alt="" /> : <img src="light-sidebar-logo-2.svg" alt="" />}Messages</p>
+                                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-3.svg" alt="" /> : <img src="light-sidebar-logo-3.svg" alt="" />}Notifications</p>
+                                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-4.svg" alt="" /> : <img src="light-sidebar-logo-4.svg" alt="" />}Users</p>
+                                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-5.svg" alt="" /> : <img src="light-sidebar-logo-5.svg" alt="" />}Events & Logs</p>
+                                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-6.svg" alt="" /> : <img src="light-sidebar-logo-6.svg" alt="" />}Organization</p>
+                                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
                             </div>
                         </div>
 

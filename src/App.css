@@ -519,7 +519,10 @@ body.light-mode {
 
    .sidebar-ul{
     list-style: none;
-   }
+        li{
+            cursor: pointer;
+        }
+    }
 
 
    .sidebar-content-header{
@@ -529,12 +532,18 @@ body.light-mode {
             font-weight: 600;
             line-height: 24px;
         }
+        
    }
 
    .sidebar-input{
     background-color: var(---input-bg);
     border: 1px solid var(---border);
-    border-radius: 5px
+    border-radius: 5px;
+    width: 100%;
+}
+.sidebar-input:hover{
+    box-shadow: 2px 2px 10px #0ff;
+
    }
 
    .sidebar-content-body{
@@ -542,6 +551,12 @@ body.light-mode {
     font-size: 15px;
     font-weight: 600;
     line-height: 22px;
+    p {
+        cursor: pointer;
+    }
+    p:hover{
+        color: #FFF;
+    }
    }
 
    .avatar-div{
