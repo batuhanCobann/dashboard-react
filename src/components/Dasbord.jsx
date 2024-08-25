@@ -246,7 +246,7 @@ export default function  Dasbord(){
                                     {renderContent()}
                                     </div>
                                 </div>
-                                <div className="div1-ofcanvas mt-">
+                                <div className="div1-ofcanvas p-2">
                                     
                                     <ul className="sidebar-ul-offcanvas">
                                         <li onClick={() => setActiveContent(1)}>{isDarkMode ? <img src="dark-logo-1.svg" alt="" /> : <img src="light-logo-1.svg" alt="" />}</li>
@@ -268,10 +268,11 @@ export default function  Dasbord(){
                         <p className="d-flex align-items-center gap-2">Home <img src="right.svg" alt="" /></p>
                         <p className="d-flex align-items-center gap-2">Setting <img src="right.svg" alt="" /></p>
                         <p className="text-primary d-flex align-items-center gap-2">General <img src="right.svg" alt="" /></p>
-                        <p onClick={toggleMode} className="btn streched-link">{isDarkMode ? 'Light' : 'Dark'} Mode</p>
+                        <p onClick={toggleMode} className="btn streched-link d-flex gap-2">{isDarkMode ? <img src="dark-mode.svg" alt="" /> : <img src="light-mode.svg" alt="" />}{isDarkMode ? 'Light' : 'Dark'} Mode</p>
+                        
                     </div>
                     <div className="header-conteiner-two">
-                        <b className="back gap-1">{isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}Back {isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}<span onClick={toggleMode} className="">{isDarkMode ? 'Light' : 'Dark'} Mode</span></b>
+                        <b className="back  gap-2">{isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}Back {isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}<span  onClick={toggleMode} className="d-flex gap-2">         {isDarkMode ? <img src="dark-mode.svg" alt="" /> : <img src="light-mode.svg" alt="" />}          {isDarkMode ? 'Light' : 'Dark'} Mode</span></b>
                         
                         <div className="content-and-buttons">
                             <div className="content">
