@@ -272,7 +272,7 @@ export default function  Dasbord(){
                         
                     </div>
                     <div className="header-conteiner-two">
-                        <b className="back  gap-2">{isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}Back {isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}<span  onClick={toggleMode} className="d-flex gap-2">         {isDarkMode ? <img src="dark-mode.svg" alt="" /> : <img src="light-mode.svg" alt="" />}          {isDarkMode ? 'Light' : 'Dark'} Mode</span></b>
+                        <b className="back  gap-2">{isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}Back {isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}<span  onClick={toggleMode} className="mobile-dark-light d-flex gap-2 ">         {isDarkMode ? <img src="dark-mode.svg" alt="" /> : <img src="light-mode.svg" alt="" />}          {isDarkMode ? 'Light' : 'Dark'} Mode</span></b>
                         
                         <div className="content-and-buttons">
                             <div className="content">

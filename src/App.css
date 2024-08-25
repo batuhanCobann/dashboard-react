@@ -108,7 +108,9 @@ body.light-mode {
 }
 
 
-
+.mobile-dark-light{
+    cursor: pointer;
+}
 
   
 .header-conteiner-two{
