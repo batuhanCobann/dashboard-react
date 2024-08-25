@@ -152,13 +152,13 @@ export default function  Dasbord(){
                                     <img src="sidebar-avatar.jpg" alt="" />
                                     <span>Birian Ford</span>
                                 </div>
-                                {isDarkMode ? <img src="dark-nokta.svg" alt="" /> : <img src="light-nokta.svg" alt="" />}   
+                                {isDarkMode ? <img className="btn streched-link" src="dark-nokta.svg" alt="" /> : <img src="light-nokta.svg" alt="" />}   
                             </div>
                             <div className="sidebar-foter">
                                 <img src="sidebar-footer-img.svg" alt="" />
                                 <h1 className="mt-3">Subscription Plan</h1>
                                 <p>Your Subscription plan will expire soon please upgrade!</p>
-                                <b className="text-primary">Upgrade</b>
+                                <b className="text-primary btn streched-link">Upgrade</b>
                             </div>
                         </div>
                     </div>
@@ -628,7 +628,7 @@ export default function  Dasbord(){
                                         </li> 
                                         {/* ---------------------------------------------------------------------------------------------------------------------------- */}
                                         <div className="p-3">
-                                            <p className="d-flex gap-2 text-primary">Open <img src="externalLink.svg" alt="" /></p>
+                                            <p className="d-flex gap-2 text-primary btn streched-link">Open <img src="externalLink.svg" alt="" /></p>
                                         </div>
                                     </ul>
                                 </div>

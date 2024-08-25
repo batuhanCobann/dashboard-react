@@ -181,8 +181,11 @@ body.light-mode {
     margin: 16px;
     border: 1px solid var(---border);
     border-radius: 10px;
-    box-shadow: 0px 2px 2px 1px var();
+    cursor:pointer ;
+}
 
+.body-mini-conteiner-one:hover{
+    box-shadow: 0px 4px 10px #0ff;
 }
 .mini-headline{
     padding: 16px;
@@ -543,7 +546,6 @@ body.light-mode {
 }
 .sidebar-input:hover{
     box-shadow: 2px 2px 10px #0ff;
-
    }
 
    .sidebar-content-body{
