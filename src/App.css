@@ -688,7 +688,7 @@ body.light-mode {
                 cursor: pointer;
             }
             p:hover{
-                color: #FFF;
+                color: var(---sidebar-text-hover);
             }
            }
         
@@ -711,7 +711,7 @@ body.light-mode {
 
 
            .close-btn{
-            size: 50px;
+            cursor: pointer;
            }
       
       
