@@ -25,6 +25,7 @@
     ---chart-global-btn-text:#E2341D;
     ---chart-intuitive-btn-bg:#F0FAF0;
     ---chart-intuitive-btn-text:#2D8A39;
+    ---sidebar-text-hover:#252b32;
 
     
 
@@ -56,6 +57,7 @@
     ---chart-global-btn-text:#fff;
     ---chart-intuitive-btn-bg:#5DC264;
     ---chart-intuitive-btn-text:#fff;
+    ---sidebar-text-hover:#fdfafa;
 
 } 
 
@@ -565,7 +567,7 @@ body.light-mode {
         cursor: pointer;
     }
     p:hover{
-        color: #FFF;
+        color: var(---sidebar-text-hover);
     }
    }
 
