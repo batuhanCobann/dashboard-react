@@ -183,7 +183,7 @@ export default function  Dasbord(){
                         <p className="d-flex align-items-center gap-2">Home <img src="right.svg" alt="" /></p>
                         <p className="d-flex align-items-center gap-2">Setting <img src="right.svg" alt="" /></p>
                         <p className="text-primary d-flex align-items-center gap-2">General <img src="right.svg" alt="" /></p>
-                        <p onClick={toggleMode} className="">{isDarkMode ? 'Light' : 'Dark'} Mode</p>
+                        <p onClick={toggleMode} className="btn streched-link">{isDarkMode ? 'Light' : 'Dark'} Mode</p>
                     </div>
                     <div className="header-conteiner-two">
                         <b className="back gap-1">{isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}Back {isDarkMode? <img src="dark-back.svg" alt="" /> : <img src="light-back.svg" alt="" />}<span onClick={toggleMode} className="">{isDarkMode ? 'Light' : 'Dark'} Mode</span></b>
@@ -221,7 +221,7 @@ export default function  Dasbord(){
                                 </div>
                             </div>
                             <div className="mini-headline-chart">
-                                <img className="w-50" src="blue-chart.svg" alt="" />
+                                <img className="w-100" src="blue-chart.svg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -241,7 +241,7 @@ export default function  Dasbord(){
                                     </div>
                                 </div>
                                 <div className="mini-headline-chart">
-                                    <img className="w-50" src="red-chart.svg" alt="" />
+                                    <img className="w-100" src="red-chart.svg" alt="" />
                                 </div>
                             </div>
                     </div>
@@ -261,7 +261,7 @@ export default function  Dasbord(){
                                     </div>
                                 </div>
                                 <div className="mini-headline-chart">
-                                    <img  className="w-50"src="green-chart.svg" alt="" />
+                                    <img  className="w-100"src="green-chart.svg" alt="" />
                                 </div>
                             </div>
                     </div>
