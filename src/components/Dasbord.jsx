@@ -106,9 +106,66 @@ export default function  Dasbord(){
     setIsDarkMode(!isDarkMode);
   };
 
+
+  const [activeContent, setActiveContent] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOffcanvas = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const renderContent = () => {
+    switch (activeContent) {
+      case 1:
+        return (
+            <div className="sidebar-content-body-offcanvas p-2 d-grid gap-3 mt-3">
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-1.svg" alt="" /> : <img src="light-sidebar-logo-1.svg" alt="" />}General</p>
+            </div>
+        );
+      case 2:
+        return (
+            <div className="sidebar-content-body-offcanvas p-2 d-grid gap-3 mt-3">
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-1.svg" alt="" /> : <img src="light-sidebar-logo-1.svg" alt="" />}General</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-5.svg" alt="" /> : <img src="light-sidebar-logo-5.svg" alt="" />}Events & Logs</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
+            </div>
+        );
+      case 3:
+        return (
+            <div className="sidebar-content-body-offcanvas p-2 d-grid gap-3 mt-3">
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-1.svg" alt="" /> : <img src="light-sidebar-logo-1.svg" alt="" />}General</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-6.svg" alt="" /> : <img src="light-sidebar-logo-6.svg" alt="" />}Organization</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
+            </div>
+        );
+      case 4:
+        return (
+            <div className="sidebar-content-body-offcanvas p-2 d-grid gap-3 mt-3">
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-1.svg" alt="" /> : <img src="light-sidebar-logo-1.svg" alt="" />}General</p>
+                    <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-5.svg" alt="" /> : <img src="light-sidebar-logo-5.svg" alt="" />}Events & Logs</p>
+                    <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-6.svg" alt="" /> : <img src="light-sidebar-logo-6.svg" alt="" />}Organization</p>
+                    <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
+                </div>
+        );
+      case 5:
+        return (
+            <div className="sidebar-content-body-offcanvas p-2 d-grid gap-3 mt-3">
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-3.svg" alt="" /> : <img src="light-sidebar-logo-3.svg" alt="" />}Notifications</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-4.svg" alt="" /> : <img src="light-sidebar-logo-4.svg" alt="" />}Users</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-5.svg" alt="" /> : <img src="light-sidebar-logo-5.svg" alt="" />}Events & Logs</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-6.svg" alt="" /> : <img src="light-sidebar-logo-6.svg" alt="" />}Organization</p>
+                <p className="d-flex gap-2 streched-link">{isDarkMode ? <img src="dark-sidebar-logo-7.svg" alt="" /> : <img src="light-sidebar-logo-7.svg" alt="" />}Teams</p>
+            </div>
+        );
+      default:
+        return <p>Selam Dünyaaa</p>;
+    }
+  };
+
     return (
         <div  className="mega-div">
-
             <div className="containers">
                 <div className="d-flex h-100">
                     <div className="div1 d-grid align-content-between">
@@ -171,11 +228,39 @@ export default function  Dasbord(){
 
 
             <div className="container-main">
+
+               
+
+
                 <div className="header-conteiner-mobil">
                     {isDarkMode ? <img src="dark-CompanyLogo.svg" alt="" /> : <img src="CompanyLogo.svg" alt="" />}
-                    <button>{isDarkMode ? <img src="dark-hamburgerMenu.svg" alt="" /> : <img src="light-hamburgerMenu.svg" alt="" />}</button>
+                    <button onClick={toggleOffcanvas}>{isDarkMode ? <img src="dark-hamburgerMenu.svg" alt="" /> : <img src="light-hamburgerMenu.svg" alt="" />}</button>
                 </div> 
-                            {/* ------------------------------------------------------------------------------------------------- */}
+                <div>
+                    <div>
+                        <div className={`offcanvas-menu ${isOpen ? 'open' : ''}`}>
+                            <p className="close-btn mt-3 mx-3" onClick={toggleOffcanvas}>{isDarkMode ? <img src="dark-close.svg" alt="" /> : <img src="light-close.svg" alt="" />}</p>
+                            <div className="ofcanvas-bodys d-flex justify-content-between p-2">
+                                <div className="div2-offcanvas">
+                                    <div className="content">
+                                    {renderContent()}
+                                    </div>
+                                </div>
+                                <div className="div1-ofcanvas mt-">
+                                    
+                                    <ul className="sidebar-ul-offcanvas">
+                                        <li onClick={() => setActiveContent(1)}>{isDarkMode ? <img src="dark-logo-1.svg" alt="" /> : <img src="light-logo-1.svg" alt="" />}</li>
+                                        <li onClick={() => setActiveContent(2)}>{isDarkMode ? <img src="dark-logo-2.svg" alt="" /> : <img src="light-logo-2.svg" alt="" />}</li>
+                                        <li onClick={() => setActiveContent(3)}>{isDarkMode ? <img src="dark-logo-3.svg" alt="" /> : <img src="light-logo-3.svg" alt="" />}</li>
+                                        <li onClick={() => setActiveContent(4)}>{isDarkMode ? <img src="dark-logo-4.svg" alt="" /> : <img src="light-logo-4.svg" alt="" />}</li>
+                                        <li onClick={() => setActiveContent(5)}>{isDarkMode ? <img src="dark-logo-5.svg" alt="" /> : <img src="light-logo-5.svg" alt="" />}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{/* ------------------------------------------------------------------------------------------------- */}
 
 
                 <div className="header-conteiner">
